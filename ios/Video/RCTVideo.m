@@ -911,7 +911,7 @@ static int const RCTVideoUnset = -1;
     _pipController.delegate = self;
   } else {
     _pipController = NULL;
-  }	  }
+  }	
 }
 #endif
 
