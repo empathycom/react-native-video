@@ -2,7 +2,8 @@ name: ci
 on: [push, pull_request]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Not ubuntu-slim: it has no yarn
+    runs-on: ubuntu-24.04-arm
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
